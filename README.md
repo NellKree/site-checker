@@ -2,6 +2,8 @@
 
 Экспериментальный MVP сервиса независимой проверки сайтов перед приёмкой. Один React-проект объединяет галерею и шесть самостоятельных дизайн-концепций с общей логикой проверки.
 
+[Открыть сайт](https://nellkree.github.io/site-checker/) · [GitHub-репозиторий](https://github.com/NellKree/site-checker)
+
 ## Технологии
 
 React, Vite, JavaScript, обычный CSS и Google PageSpeed Insights API v5. Для локальной разработки нужен Node.js 22.12+ или 20.19+. Публикация выполняется через GitHub Actions на GitHub Pages.
