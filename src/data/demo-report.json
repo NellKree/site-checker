@@ -1,0 +1,42 @@
+{
+  "kind": "pagespeedonline#result",
+  "id": "https://example.com/",
+  "analysisUTCTimestamp": "2026-10-21T10:42:00Z",
+  "lighthouseResult": {
+    "requestedUrl": "https://example.com/",
+    "finalDisplayedUrl": "https://example.com/",
+    "fetchTime": "2026-10-21T10:42:00Z",
+    "lighthouseVersion": "13.0.0",
+    "configSettings": { "formFactor": "mobile", "locale": "ru" },
+    "categories": {
+      "performance": { "title": "Performance", "score": 0.78, "auditRefs": [{ "id": "render-blocking-insight", "weight": 0 }, { "id": "image-delivery-insight", "weight": 0 }] },
+      "accessibility": { "title": "Accessibility", "score": 0.94, "auditRefs": [{ "id": "color-contrast", "weight": 7 }] },
+      "best-practices": { "title": "Best Practices", "score": 0.96, "auditRefs": [] },
+      "seo": { "title": "SEO", "score": 1, "auditRefs": [] }
+    },
+    "audits": {
+      "first-contentful-paint": { "title": "First Contentful Paint", "displayValue": "1,8 с", "numericValue": 1800 },
+      "largest-contentful-paint": { "title": "Largest Contentful Paint", "displayValue": "3,4 с", "numericValue": 3400 },
+      "total-blocking-time": { "title": "Total Blocking Time", "displayValue": "180 мс", "numericValue": 180 },
+      "cumulative-layout-shift": { "title": "Cumulative Layout Shift", "displayValue": "0,06", "numericValue": 0.06 },
+      "speed-index": { "title": "Speed Index", "displayValue": "3,1 с", "numericValue": 3100 },
+      "render-blocking-insight": {
+        "title": "Запросы, блокирующие отрисовку",
+        "description": "Запросы блокируют первоначальную отрисовку страницы, что может задержать LCP. Отложите загрузку некритичных ресурсов.",
+        "displayValue": "Возможная экономия: 420 мс",
+        "score": 0.43, "scoreDisplayMode": "metricSavings", "details": { "type": "table" }
+      },
+      "image-delivery-insight": {
+        "title": "Оптимизируйте загрузку изображений",
+        "description": "Уменьшение объёма передаваемых изображений может ускорить загрузку страницы. Используйте современные форматы и подходящие размеры.",
+        "displayValue": "Возможная экономия: 184 КиБ",
+        "score": 0.51, "scoreDisplayMode": "metricSavings", "details": { "type": "table" }
+      },
+      "color-contrast": {
+        "title": "Увеличьте контраст текста и фона",
+        "description": "Текст с низким контрастом сложно читать. Проверьте контраст текста на его фоне.",
+        "score": 0, "scoreDisplayMode": "binary", "details": { "type": "table" }
+      }
+    }
+  }
+}

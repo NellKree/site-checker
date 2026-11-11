@@ -1,0 +1,42 @@
+.desktop { --paper: #dad7f8; --ink: #272345; --muted: #544b72; --surface: #fdfcff; --accent: #4b3ec0; --line: #b3a9d4; --mark: #4b3ec0; --radius: 8px; --focus: #5436c8; background-image: radial-gradient(#8f87c68c 1px, transparent 1px); background-size: 13px 13px; }
+.desk-top { background: #f5f2ff; border-bottom: 1px solid #a399c8; }
+.desk-top > div { display: grid; grid-template-columns: auto 1fr auto; gap: 22px; align-items: center; min-height: 66px; }
+.desk-top > div > span { color: var(--muted); font-size: 13px; }
+.desk-space { padding-top: clamp(23px, 6vw, 78px); }
+.desk-hero { display: grid; grid-template-columns: minmax(0, 790px) 145px; justify-content: center; align-items: start; gap: clamp(18px, 4vw, 55px); }
+.desk-window { background: var(--surface); border: 1px solid #655c98; border-radius: 13px; box-shadow: 5px 6px 0 #7566ae78; }
+.desk-bar { display: flex; align-items: center; gap: 9px; min-height: 43px; padding-inline: 14px; border-bottom: 1px solid var(--line); border-radius: 12px 12px 0 0; background: #eeebfc; font-size: 13px; font-weight: 650; }
+.desk-bar small { margin-left: auto; font: 11px var(--mono); color: var(--muted); }
+.desk-content, .desk-report { padding: clamp(18px, 4.4vw, 59px); }
+.desk-app-icon { display: inline-grid; place-items: center; width: 54px; height: 54px; border: 1px solid #b4a9de; border-radius: 12px; color: #4b3ec0; background: #eae4ff; }
+.desk-content h1 { font-size: clamp(37px, 6.4vw, 89px); line-height: .94; letter-spacing: -.075em; margin-top: 13px; }
+.desk-content p { max-width: 45ch; margin-top: 16px; line-height: 1.5; color: var(--muted); }
+.desk-content .check { margin-top: 25px; }
+.desk-content .check-error { color: #a52821; }
+.desk-dock { display: grid; gap: 13px; justify-items: start; }
+.desk-dock button { display: grid; justify-items: center; align-content: center; gap: 7px; text-align: center; width: 100%; padding: 12px 7px; border: 1px solid #a398cb; border-radius: 11px; text-decoration: none; background: #f5f0ff; color: var(--ink); font-size: 12px; font-weight: 650; box-shadow: 2px 3px 0 #7566ae66; }
+.desk-dock button:hover { background: #e9e0ff; }
+.desk-dock svg { color: var(--accent); }
+.desk-report-grid { display: grid; grid-template-columns: 1.2fr 1fr; align-items: start; gap: 18px 30px; margin-block: 20px; }
+.desk-report .scores { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 0; }
+.desk-report .score { border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: #f3f0ff; }
+.desk-report .score dd { font-size: 31px; }
+.desktop .offers { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.desktop .offers article { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 17px; border: 1px solid #a398cb; border-radius: 11px; background: #f5f0ff; }
+.desktop .offers h2 span { font-size: 15px; margin-left: 5px; }
+.desktop .offers article > svg { color: var(--accent); }
+.desktop .site-foot { border-color: #a398cb; }
+@media (max-width: 770px) {
+  .desk-hero, .desk-report-grid { grid-template-columns: 1fr; }
+  .desk-dock { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+}
+@media (max-width: 540px) {
+  .desk-top > div { grid-template-columns: 1fr auto; gap: 8px; }
+  .desk-top > div > span { display: none; }
+  .desktop .offers { grid-template-columns: 1fr; }
+  .desk-report .score { padding: 9px; }
+}
+@media (max-width: 350px) {
+  .desk-report .scores { grid-template-columns: 1fr; }
+  .desk-report .score { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+}
