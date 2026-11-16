@@ -17,7 +17,7 @@ function DesignSwitcher({ selected }) {
     <label>
       <span className="sr-only">Переключить концепцию</span>
       <select value={selected} onChange={event => { window.location.hash = `#/${event.target.value}` }}>
-        {designs.map(({ id, name }, index) => <option key={id} value={id}>{String(index + 1).padStart(2, '0')} / {name}</option>)}
+        {designs.map(({ id, number, name }) => <option key={id} value={id}>{number} / {name}</option>)}
       </select>
       <Icon name="chevron" size={13} />
     </label>

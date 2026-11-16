@@ -13,7 +13,7 @@
 .gallery-section { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding-block: 14px; border-top: 1px solid #596456; }
 .gallery-section h2 { font-size: 16px; font-weight: 600; }
 .gallery-section > span { color: #b6c2b6; white-space: nowrap; }
-.gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }
 .gallery-card { min-width: 0; display: flex; flex-direction: column; text-decoration: none; background: #242d27; border: 1px solid #485347; transition: border-color .16s, background-color .16s; }
 .gallery-card:hover { border-color: #d4f58a; background: #2d392f; }
 .gallery-card-body { display: grid; grid-template-columns: auto 1fr auto; align-items: start; gap: 12px; padding: 15px 12px; flex: 1; }

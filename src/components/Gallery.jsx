@@ -23,18 +23,18 @@ export default function Gallery({ designs }) {
     <main id="main" className="wrap">
       <section className="gallery-intro">
         <div><div className="gallery-kicker"><i /> СЕРИЯ ИССЛЕДОВАНИЙ / 01</div><h1>Сайт на срезе<span>.</span></h1></div>
-        <p>Шесть концепций сервиса независимой проверки сайтов. Откройте любую, чтобы пройти проверку и сравнить отчёты.</p>
+        <p>Две концепции сервиса независимой проверки сайтов. Откройте любую, чтобы пройти проверку и сравнить отчёты.</p>
       </section>
       <section aria-labelledby="gallery-title">
-        <div className="gallery-section"><h2 id="gallery-title">Визуальные концепции</h2><span>01–06 / КАТАЛОГ</span></div>
-        <div className="gallery-grid">{designs.map(({ id, name, type, description }, index) =>
+        <div className="gallery-section"><h2 id="gallery-title">Визуальные концепции</h2><span>{designs.map(({ number }) => number).join(', ')} / КАТАЛОГ</span></div>
+        <div className="gallery-grid">{designs.map(({ id, number, name, type, description }) =>
           <a className="gallery-card" href={`#/${id}`} key={id} aria-label={`Открыть ${name} — ${description}`}>
             <div className={`preview preview-${id}`} aria-hidden="true">
               <div className="preview-bar"><span><Mark size={13} /> Срез</span><span>{type}</span></div>
               {previews[id]}
             </div>
             <div className="gallery-card-body">
-              <span className="card-index">{String(index + 1).padStart(2, '0')}</span>
+              <span className="card-index">{number}</span>
               <div><h3>{name}</h3><p>{description}</p></div>
               <span className="card-arrow"><Icon name="diagonal" size={19} /></span>
             </div>
